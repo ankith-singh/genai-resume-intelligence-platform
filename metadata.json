@@ -1,0 +1,6 @@
+{
+  "name": "GenAI Resume Intelligence Platform",
+  "description": "Enterprise-grade resume intelligence platform with hybrid search RAG, weighted ATS scoring, career path visualization, interview simulation, multi-agent evaluation, and comparison analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,12 +1,42 @@
 # GenAI Resume Intelligence Platform 🚀
 
+
+![React](https://img.shields.io/badge/React-19-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)
+![Node.js](https://img.shields.io/badge/Node.js-22-green)
+![Express](https://img.shields.io/badge/Express-4-black)
+![Gemini](https://img.shields.io/badge/Google-Gemini-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 An enterprise-grade, high-fidelity resume parsing, analysis, and simulation application. Engineered to demonstrate advanced AI Engineering, RAG architectures, LLMOps, systemic design, and modern full-stack development.
 
 Designed to serve as a portfolio hallmark for senior roles in Artificial Intelligence, Machine Learning, and Software Development Engineering.
 
 ---
 
+## 🌐 Live Demo
+
+> 🚧 Coming Soon (Deployment in Progress)
+
+The application will be deployed on Vercel after final testing.
+
+Repository:
+https://github.com/ankith-singh/genai-resume-intelligence-platform
+
 ## 🌟 Key Technical Features
+
+## ✅ Platform Features
+
+- ✅ AI Resume Parsing
+- ✅ ATS Weighted Resume Scoring
+- ✅ Hybrid RAG Resume Assistant
+- ✅ Job Description Matching
+- ✅ Career Roadmap Generator
+- ✅ Interview Simulator
+- ✅ Resume Version Comparison
+- ✅ Multi-Agent Workflow Visualization
+- ✅ Analytics Dashboard
+- ✅ RAGAS Evaluation Dashboard
 
 ### 1. Robust Parser Engine (Gemini API)
 - Extracts nested metrics from resumes (Skills, Experience chronologies, projects, academic Pedigree, certifications).
@@ -39,7 +69,36 @@ Designed to serve as a portfolio hallmark for senior roles in Artificial Intelli
 
 ---
 
+---
+
+## 🏗️ System Architecture
+
+```
+          Resume Upload
+                 │
+                 ▼
+         Gemini Resume Parser
+                 │
+                 ▼
+      Structured Resume JSON
+                 │
+      ┌──────────┴──────────┐
+      ▼                     ▼
+ ATS Scoring          Hybrid RAG Index
+      │                     │
+      ▼                     ▼
+ Analytics          AI Resume Assistant
+      │
+      ▼
+Career Coach
+      │
+      ▼
+Interview Simulator
+```
+
 ## 🛠️ Stack Components
+
+
 
 - **Backend**: Node.js, Express, TypeScript (transpiled automatically with CJS bundles using `esbuild`).
 - **Frontend**: React 19, TypeScript, Tailwind CSS, Recharts.
@@ -92,3 +151,25 @@ npm start
 ├── server.ts                 # Production Express full-stack framework
 └── package.json              # System configuration scripts
 ```
+---
+
+## 🚀 Future Improvements
+
+- PDF Resume Parsing
+- DOCX Resume Upload
+- Pinecone Vector Database
+- PostgreSQL Support
+- JWT Authentication
+- Resume Template Generator
+- Admin Dashboard
+- Cloud Storage Integration
+- Docker Production Deployment
+- CI/CD Pipeline using GitHub Actions
+---
+
+## 👨‍💻 Author
+
+**Ankit Singh**
+
+GitHub:
+https://github.com/ankith-singh

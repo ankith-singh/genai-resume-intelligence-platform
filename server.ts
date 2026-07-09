@@ -303,19 +303,24 @@ app.get("/api/analytics", (req, res) => res.json(dbStore.getAnalyticsSummary()))
 app.get("/api/logs", (req, res) => res.json({ logs: dbStore.getEvaluationLogs() }));
 
 async function initializeServer() {
-  if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({ server: { middlewareMode: true }, appType: "spa" });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => res.sendFile(path.join(distPath, "index.html")));
-  }
-  app.listen(PORT, "0.0.0.0", () => {
-    logger.info(`Server fully operational at: http://localhost:${PORT}`);
-  });
-}
 
+  app.get("/", (req, res) => {
+    console.log("ROOT HIT");
+    res.send("Railway is working!");
+  });
+
+  app.get("/api/health", (req, res) => {
+    console.log("HEALTH HIT");
+    res.json({
+      status: "OK"
+    });
+  });
+
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Listening on ${PORT}`);
+  });
+
+}
 initializeServer().catch((e) => {
-  console.error("Express initialization crashed absolutely:", e);
+  console.error("Express initialization crashed:", e);
 });
